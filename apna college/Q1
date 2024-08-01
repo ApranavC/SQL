@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS apna_college;
+USE apna_college;
+create table if not exists employee (
+	id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    salary INT NOT NULL
+);
+INSERT INTO employee(id, name, salary)
+VALUES
+(1 , "ADAM", 25000),
+(2 , "BOB" , 30000),
+(3 , "CASEY", 40000);
+SELECT * from employee;
